@@ -182,9 +182,10 @@ def delete_empty_folder(path_for_delete):
 
 
 # Головна процедура для проведення розбору файлів
-def main_procedure():
+def first_procedure():
+    path_for_analize = input('Enter the full path to the folder >>>> ')
     try:
-        dyrectory_current = sys.argv[1]
+        dyrectory_current = path_for_analize
         analiz_files(dyrectory_current)
         create_list_suffix()
         report_and_create_folder(dyrectory_current)
@@ -195,4 +196,4 @@ def main_procedure():
         print('Enter the path to the folder')
 
 
-main_procedure()
+first_procedure()
