@@ -1,7 +1,7 @@
 from setuptools import setup, find_namespace_packages
 
 setup(name='sorting_files', 
-      version='0.0.1',
+      version='0.0.2',
       description='File sorter',
       url='https://github.com/melser68/modul_7_task',
       author='melser68',

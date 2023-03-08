@@ -191,9 +191,10 @@ def main():
         report_and_create_folder(dyrectory_current)
         unpack_archive(dyrectory_current)
         delete_empty_folder(dyrectory_current)
-
+        query = input('Want to repeat with another folder ? (yes/no)\n>>>> ')
+        if query.lower() == 'yes':
+            main()
     except:
         print('Enter the path to the folder')
 
 
-main()
