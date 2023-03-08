@@ -182,7 +182,7 @@ def delete_empty_folder(path_for_delete):
 
 
 # Головна процедура для проведення розбору файлів
-def first_procedure():
+def main():
     path_for_analize = input('Enter the full path to the folder >>>> ')
     try:
         dyrectory_current = path_for_analize
@@ -196,4 +196,4 @@ def first_procedure():
         print('Enter the path to the folder')
 
 
-first_procedure()
+main()
